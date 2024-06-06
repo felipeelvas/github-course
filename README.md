@@ -4,9 +4,7 @@ Arquivo da aula do Git Github para iniciantes
 
 Repositório Teste para saber como o git funciona
 
-Saiba mais em [willianjusten.com.br](http://wllianjustencom.br)
-
-##Comandos:
+*Comandos:
 cd 00-Files-Elvas/
 
 mkdir git-course
@@ -232,11 +230,41 @@ README.md
 
 
 
-Git Course
+##Extras
 
-Arquivo da aula do Git Github para iniciantes
+**git stash:**
+-altere um arquivo e salve;
+-git status para ver a modificação; Ex.: --> modified:   README.md
+-preciso criar um novo branch mas não quero levar a modificação
+-git stash vai guardar a modificação e vai retornar um estado de working progress
+-git status novamente e verifico que a modificação sumiu
+-crio uma nova branch: git checkout -b name-branch
+-git stash apply: alica as mudanças que estavam guardadas. Ex.: --> modified:   README.md
+-git diff: mostra as mudanças
+-git stash list: lista de todos os stash que estou fazendo
+-git stash clear: limpa tudo que estiver no stash.
 
-Repositório Teste para saber como o git funciona
 
-Saiba mais em [willianjusten.com.br](http://wllianjustencom.br)
+
+**Criando atalhos com Alias (atalhos dos comandos)**
+
+git config --global alias.s status
+
+exemplo atalho para git status; (git s)
+
+git config --global alias.b branch
+git b
+* bla
+  main
+  test
+exemplo atalho para git branch; (git b)
+
+**git tag**
+usado em bibliotecas ou sitemas muito grandes
+
+tag com anotação:
+git tag -a 1.0.0 -m "Readme fializado"
+
+para subir a tag:
+git push origin main --tags
 
